@@ -34,7 +34,9 @@ public class FileRW {
     }
 
     public static String getFileContent(String path) throws IOException {
-        return Files.readString(Paths.get(path), StandardCharsets.US_ASCII);
+        String s = Files.readString(Paths.get(path), StandardCharsets.US_ASCII);
+        String s1 = s.replaceAll("\r", "");
+        return s1;
     }
 
     public static void writeContentToFile(String path, String content) throws IOException {

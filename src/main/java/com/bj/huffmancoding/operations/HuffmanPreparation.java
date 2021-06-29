@@ -16,7 +16,9 @@ public class HuffmanPreparation {
             (o1, o2) -> {
                 double f1 = o1.getFrequency();
                 double f2 = o2.getFrequency();
-                return f1 < f2 ? -1 : f1 > f2 ? 1 : 0;
+                String v1 = o1.getValue();
+                String v2 = o2.getValue();
+                return v1.equals(v2) ? 0 : f1 < f2 ? -1 : 1;
             });
 
     {
