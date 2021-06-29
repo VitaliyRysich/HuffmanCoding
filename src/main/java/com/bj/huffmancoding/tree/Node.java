@@ -6,11 +6,11 @@ public class Node {
     private String value;
     private Node leftNode;
     private Node rightNode;
-    private double frequency;
+    private int frequency;
 
     public Node() {
     }
-    public Node(String value, double frequency) {
+    public Node(String value, int frequency) {
         this.value = value;
         this.frequency = frequency;
     }
@@ -39,11 +39,11 @@ public class Node {
         this.rightNode = rightNode;
     }
 
-    public double getFrequency() {
+    public int getFrequency() {
         return frequency;
     }
 
-    public void setFrequency(double frequency) {
+    public void setFrequency(int frequency) {
         this.frequency = frequency;
     }
 
